@@ -1,0 +1,89 @@
+@mixin shrinkLabel {
+    top: -14px;
+    font-size: 12px;
+}
+
+.signInContainer {
+    display: flex;
+}
+
+.signIn , .signUp{
+    width: 50%;
+    padding: 5em;
+
+    .title {
+        font-family: 'Djakarta';
+
+        h2 {
+            letter-spacing: 4px;
+        }
+    }
+
+    .form {
+        .btnSignIn {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 2em;
+            .btnLogin {
+                border: none;
+                background: rgb(36, 36, 36);
+                padding: 10px;
+                width: 150px;
+                color: rgb(187, 177, 177);
+                font-family: 'Djakarta';
+                letter-spacing: 3px;
+                cursor: pointer;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+        }
+
+        .formGroup {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin-top: 2em;
+
+            input {
+                height: 50px;
+                border-bottom: 2px grey solid;
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                color: grey;
+                font-family: 1.5em;
+                font-family: 'Djakarta';
+
+                &:focus {
+                    outline-width: 0;
+                }
+
+            }
+
+            label {
+                position: absolute;
+                top: 1.5em;
+                transition: all 0.5s;
+                font-family: 'Djakarta';
+                color: grey;
+                font-size: 1.5em;
+            }
+
+            // input:not([value=""]):not(:focus):invalid~label ,input:focus~label {
+            //     top: 0;
+            //     font-size: 1em;
+            // }
+            input:focus~label,
+            input:valid~label,
+            input:not([value=""])~label {
+                top: 0;
+                font-size: 1em;
+            }
+
+        }
+    }
+}
