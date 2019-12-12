@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import '../signInUp.styles.scss'
-import { signInWithGoogle } from '../../../firebase/firebase.utils'
-
+import { auth,signInWithGoogle } from '../../../firebase/firebase.utils'
+import {Link,Redirect} from 'react-router-dom'
 
 class SignIn extends Component {
     constructor(props) {
@@ -22,18 +22,26 @@ class SignIn extends Component {
         this.setState({ auth: newValue })
     }
 
-    handleSubmit = (e) => {
+    handleSubmit = async (e) => {
         e.preventDefault();
-        this.setState({
-            auth: {
-                userEmail: "",
-                userPass: ""
-            }
-        })
+        const {userEmail,userPass} = this.state.auth
+        try {
+            await auth.signInWithEmailAndPassword(userEmail,userPass)
+            this.setState({
+                auth: {
+                    userEmail: "",
+                    userPass: ""
+                }
+            })
+
+        } catch (error) {
+            console.log(error)
+        }
     }
     handleGoogleLogin = (e) => {
         e.preventDefault();
         signInWithGoogle()
+
     }
     render(){
         return(
