@@ -17,6 +17,9 @@ Here's the pages and components hierarchy structure
 
 ## Refrence
 [React Js](https://reactjs.org/docs/getting-started.html)
+
 [Redux](https://redux.js.org/api/api-reference)
+
 [Firebase auth docs](https://firebase.google.com/docs/auth)
+
 udemy.com/course/complete-react-developer-zero-to-mastery/
