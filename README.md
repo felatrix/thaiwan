@@ -20,4 +20,4 @@ Here's the pages and components hierarchy structure
  - [React Js](https://reactjs.org/docs/getting-started.html)
  - [Redux](https://redux.js.org/api/api-reference) 
  - [Firebase auth docs](https://firebase.google.com/docs/auth)
- - udemy.com/course/complete-react-developer-zero-to-mastery/
+ - [udemy.com/course/complete-react-developer-zero-to-mastery/](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/?utm_source=adwords&utm_medium=udemyads&utm_campaign=INTL-AW-PROS-Indonesia-DSA-EN-WebIndex&utm_term=_._ag_104075528766_._ad_451470226964_._de_c_._dm__._pl__._ti_dsa-406594358574_._li_1007716_._pd__._&gclid=EAIaIQobChMI0a_KoKnw6gIVTA4rCh2q-AhLEAAYASAAEgJ0aPD_BwE)
